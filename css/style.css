@@ -2770,6 +2770,11 @@ h6 {
 
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
+.register {
+  color: black; }
+
+/*----------------------------------------------------*/
+/*----------------------------------------------------*/
 /* Start About Us Area css
 ============================================================================================ */
 .about_us_area {
@@ -3765,7 +3770,106 @@ h6 {
   .about_page .frequently_area, .upcoming_games .frequently_area {
     padding: 60px 0; } }
 
+/*----------------------------------------------------*/
+/*----------------------------------------------------*/
+.err_two {
+  color: #1f3663;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0; }
+
+.error_content {
+  position: absolute;
+  top: 0; }
+
+.error_title {
+  font-size: 2.5vw;
+  padding: 5px;
+  margin-top: 5%;
+  margin-bottom: 15px; }
+  @media screen and (max-width: 1200px) {
+    .error_title {
+      font-size: 3vw;
+      margin-bottom: 5px; } }
+
+.error_info {
+  padding: 5px;
+  font-size: 1.2vw; }
+  @media screen and (max-width: 1200px) {
+    .error_info {
+      font-size: 2.5vw;
+      padding-top: 0; } }
+
+.err_help {
+  padding: 0 5px;
+  font-size: 0.8vw;
+  font-weight: 400; }
+  @media screen and (max-width: 1200px) {
+    .err_help {
+      font-size: 2vw;
+      padding-top: 0; } }
+
+.error_btn {
+  border-radius: 0%;
+  margin-top: 20px;
+  padding: 5px;
+  font-size: 1.3vw; }
+  @media screen and (max-width: 1200px) {
+    .error_btn {
+      margin-top: 0;
+      font-size: 2vw; } }
+
 /*---------------------------------------------------- */
+/*----------------------------------------------------*/
+.error_block {
+  color: #1f3663;
+  position: relative;
+  top: 0; }
+
+.error_content {
+  position: absolute;
+  top: 15%; }
+
+.error_title {
+  font-size: 2.5vw;
+  padding: 5px;
+  margin-top: 5%;
+  margin-bottom: 15px; }
+  @media screen and (max-width: 1200px) {
+    .error_title {
+      font-size: 3vw;
+      margin-bottom: 5px; } }
+
+.error_info {
+  padding: 5px;
+  font-size: 1.2vw; }
+  @media screen and (max-width: 1200px) {
+    .error_info {
+      font-size: 2.5vw;
+      padding-top: 0; } }
+
+.error_helper {
+  padding: 0 5px;
+  font-size: 0.9vw; }
+  @media screen and (max-width: 1200px) {
+    .error_helper {
+      font-size: 2vw;
+      padding-top: 0; } }
+
+.error_btn {
+  border-radius: 0%;
+  margin-left: 5px;
+  margin-top: 20px;
+  width: 30%;
+  padding: 5px;
+  font-size: 1.3vw; }
+  @media screen and (max-width: 1200px) {
+    .error_btn {
+      margin-top: 0;
+      font-size: 2vw; } }
+
+/*----------------------------------------------------*/
 /*----------------------------------------------------*/
 /* Footer Area css
 ============================================================================================ */
