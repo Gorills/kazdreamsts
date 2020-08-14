@@ -144,7 +144,7 @@ img {
 ============================================================================================ */
 /* Start Gradient Area css
 ============================================================================================ */
-.gradient-bg, .video-play-button:before, .video-play-button:after, .recent_update_inner .nav.nav-tabs li a.active, .recent_update_inner .nav.nav-tabs li a:hover {
+.gradient-bg, .video-play-button:before, .video-play-button:after {
   background: -webkit-linear-gradient(90deg, #3fcaff 0%, #a4ffb0 100%);
   background: -moz-linear-gradient(90deg, #3fcaff 0%, #a4ffb0 100%);
   background: -o-linear-gradient(90deg, #3fcaff 0%, #a4ffb0 100%);
@@ -351,8 +351,26 @@ img {
   top: 0;
   left: 0;
   z-index: 9999;
-  background-image: url("../img/bg.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/bg.png");
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   background-color: #333; }
+  .header_area__top {
+    width: 100%;
+    padding: 5px 0;
+    background-color: #e5e5e5; }
+  .header_area__inner {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; }
+  .header_area__link {
+    color: #777777;
+    padding: 2px 5px;
+    display: inline-block; }
+  .header_area__link + .header_area__link {
+    margin-left: 10px; }
+    .header_area__link + .header_area__link--active {
+      background-color: #1bafa9;
+      color: #ffffff; }
   .header_area .navbar-brand {
     margin-right: 0; }
   .header_area .menu_nav {
@@ -383,12 +401,12 @@ img {
           transform: translateX(-50%);
           position: absolute;
           bottom: 25%;
-          background-color: #3fcaff;
+          background-color: #138496;
           transition: all .5s ease; }
         .header_area .navbar .nav .nav-item .nav-link:after {
           display: none; }
       .header_area .navbar .nav .nav-item:hover .nav-link, .header_area .navbar .nav .nav-item.active .nav-link {
-        color: #3fcaff;
+        color: #138496;
         text-decoration: none; }
       .header_area .navbar .nav .nav-item:hover .nav-link::before, .header_area .navbar .nav .nav-item.active .nav-link::before {
         width: 100%;
@@ -510,7 +528,7 @@ img {
   z-index: 1;
   background: url(../img/bg-1.png) no-repeat center center;
   background-size: cover;
-  height: 90vh; }
+  position: relative; }
   .home_banner_area .banner_inner {
     width: 100%; }
     .home_banner_area .banner_inner .home_left_img {
@@ -2755,29 +2773,25 @@ h6 {
 /* Start About Us Area css
 ============================================================================================ */
 .about_us_area {
-  position: relative; }
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url("img/bg-1.png") !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
 
 .about_content {
-  position: relative; }
-  .about_content:before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 89%;
-    top: 0;
-    left: 0;
-    background: -webkit-linear-gradient(to right, #231a60 0%, #3c338d 51%, #231a60 100%);
-    background: -moz-linear-gradient(to right, #231a60 0%, #3c338d 51%, #231a60 100%);
-    background: -ms-linear-gradient(to right, #231a60 0%, #3c338d 51%, #231a60 100%);
-    background: -o-linear-gradient(to right, #231a60 0%, #3c338d 51%, #231a60 100%);
-    background: linear-gradient(to right, #231a60 0%, #3c338d 51%, #231a60 100%); }
+  color: #000000 !important;
+  position: relative;
+  text-align: center; }
 
 /* End About Us Area css
 ============================================================================================ */
 /* Start Upcoming Games Area css
 ============================================================================================ */
 .upcoming_games_area {
-  padding: 120px 0 80px; }
+  padding: 40px 0; }
 
 .new_games_item {
   position: relative;
@@ -2817,9 +2831,17 @@ h6 {
 /* Start Recent Update Area css
 ============================================================================================ */
 .recent_update_area {
-  background: url(../img/recent_up_bg.png) no-repeat center; }
+  position: relative;
+  height: 681px; }
   .recent_update_area.made_white {
     background: #fff; }
+  .recent_update_area .recent_update_area_absolut {
+    position: absolute;
+    top: -100px;
+    right: 50%;
+    transform: translateX(50%);
+    z-index: 2;
+    width: 100%; }
 
 .recent_update_inner .nav.nav-tabs {
   border: none;
@@ -2828,39 +2850,30 @@ h6 {
   margin-left: -15px;
   margin-right: -15px;
   justify-content: space-between; }
+  .recent_update_inner .nav.nav-tabs p {
+    line-height: 1.3; }
+  .recent_update_inner .nav.nav-tabs .nav-item__img {
+    margin-bottom: 20px; }
   .recent_update_inner .nav.nav-tabs li {
-    flex: 0 0 33%;
-    max-width: 33%;
+    flex: 0 0 20%;
+    max-width: 20%;
     padding: 0px 15px; }
     .recent_update_inner .nav.nav-tabs li a {
+      background-color: #e5e5e5;
       position: relative;
-      padding: 0px;
+      height: 200px;
       border: 0px;
       border-radius: 0;
       text-align: center;
-      height: 50px;
       line-height: 50px;
+      padding: 20px;
       font-size: 18px;
       font-family: "Rajdhani", sans-serif;
       font-weight: 600;
-      color: #fff; }
-      .recent_update_inner .nav.nav-tabs li a:after {
-        position: absolute;
-        left: 0;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        height: 100%;
-        width: 100%;
-        content: "";
-        border: 2px solid transparent;
-        border-image: -webkit-linear-gradient(90deg, #3fcaff, #a4ffb0);
-        border-image: -moz-linear-gradient(90deg, #3fcaff, #a4ffb0);
-        border-image: -o-linear-gradient(90deg, #3fcaff, #a4ffb0);
-        border-image: linear-gradient(90deg, #3fcaff, #a4ffb0);
-        border-image-slice: 1; }
-      .recent_update_inner .nav.nav-tabs li a.active, .recent_update_inner .nav.nav-tabs li a:hover {
-        color: #000000; }
+      color: #000000; }
+      .recent_update_inner .nav.nav-tabs li a.active {
+        height: 220px;
+        margin-bottom: 0; }
 
 .recent_update_inner .tab-content .tab-pane {
   border: none; }
@@ -2873,7 +2886,9 @@ h6 {
   z-index: 999; }
   .recent_update_text .chart_img img {
     height: 100% !important;
-    z-index: 999; }
+    z-index: 999;
+    background-color: #e5e5e5;
+    padding: 20px; }
   .recent_update_text .chart_img:after {
     content: "";
     position: absolute;
@@ -2881,14 +2896,22 @@ h6 {
     width: 20%;
     top: 0;
     right: -40px;
-    background: #3e3590;
+    background: #e5e5e5;
     z-index: -1; }
 
-.recent_update_text .section_content {
-  background: -webkit-linear-gradient(to right, #3e3590 0%, #231a60 100%);
-  background: -moz-linear-gradient(to right, #3e3590 0%, #231a60 100%);
-  background: -o-linear-gradient(to right, #3e3590 0%, #231a60 100%);
-  background: linear-gradient(to right, #3e3590 0%, #231a60 100%); }
+.recent_update_text .section_content-main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  justify-content: center;
+  background-color: #e5e5e5; }
+  .recent_update_text .section_content-main .primary_btn {
+    min-width: 135px;
+    font-weight: 700;
+    border-radius: 0;
+    line-height: 40px;
+    margin-top: 20px; }
 
 /* End Recent Update Area css
 ============================================================================================ */
@@ -3006,7 +3029,6 @@ h6 {
     background: #342b7e; }
   .pricing_item ul {
     list-style: none;
-    padding-left: 0;
     margin: 0;
     padding: 35px 50px 18px; }
     .pricing_item ul li {
@@ -3047,11 +3069,22 @@ h6 {
 /* Start Frequently Asked Questions Area css
 ============================================================================================ */
 .frequently_area {
+  padding: 40px 0;
   position: relative; }
   .frequently_area .main_title {
     margin-bottom: 40px; }
     .frequently_area .main_title h1 {
       color: #22195e; }
+  .frequently_area .card {
+    border: none; }
+  .frequently_area .card-header {
+    background: none;
+    border-radius: 0;
+    border-top: none;
+    border-left: none;
+    border-bottom: 1px solid #000; }
+  .frequently_area .card-link {
+    color: #777777; }
 
 .frequent_item {
   position: relative; }
