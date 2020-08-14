@@ -5,9 +5,39 @@
     top: 0;
     left: 0;
     z-index: 9999;
-    background-image: url("../img/bg.png");
-
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/bg.png");
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
     background-color: #333;
+    &__top {
+        width: 100%;
+        padding: 5px 0;
+        background-color: $background-light;
+
+    }
+    &__inner {
+        width: 100%;
+
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__link {
+        color: $text-color;
+        padding: 2px 5px;
+        display: inline-block;
+
+    }
+    &__link + &__link {
+        margin-left: 10px;
+
+        &--active {
+            background-color: #1bafa9;
+            color: #ffffff;
+        }
+
+    }
+
+
+
 
     .navbar-brand {
         margin-right: 0;
@@ -48,7 +78,7 @@
                         transform: translateX(-50%);
                         position: absolute;
                         bottom: 25%;
-                        background-color: $primary-color;
+                        background-color: $second-color;
                         transition: all .5s ease;
                     }
 
@@ -59,7 +89,7 @@
                 &:hover,
                 &.active {
                     .nav-link {
-                        color: $primary-color;
+                        color: $second-color;
                         text-decoration: none;
                     }
                     .nav-link::before {
