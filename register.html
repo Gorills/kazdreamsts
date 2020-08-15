@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <title>KazDream Technologies - Лаборатория СТС</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="vendors/linericon/style.css">
+    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+    <link rel="stylesheet" href="vendors/animate-css/animate.css">
+    <link rel="stylesheet" href="vendors/flaticon/flaticon.css">
+</head>
+
+<body>
+<header class="header_area">
+
+    <div class="header_area__top">
+        <div class="container">
+            <div class="header_area__inner">
+                <div class="header_area__wrapper">
+                    <a href="#" class="header_area__link">KAZ</a>
+                    <a href="#" class="header_area__link header_area__link--active">RUS</a>
+                    <a href="#" class="header_area__link">ENG</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main_menu">
+        <nav class="navbar navbar-expand-lg navbar-brand">
+            <div class="container">
+                <a class="navbar-brand logo_h" href="index.php"><img src="img/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                    <ul class="nav navbar-nav menu_nav justify-content-end">
+                        <li class="nav-item"><a class="nav-link" href="#">Услуги</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">О лаборатории</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
+                        <!--- CUTTED CODE #1 --->
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <button class="btn btn-info">Войти</button>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+
+
+<div class="register">
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-8 col-lg-offset-2">
+
+                <h1 class="mb-30">Регистрация нового пользователся</h1>
+
+
+
+
+                <form id="contact-form" method="post" action="contact.php" role="form">
+
+                    <div class="messages"></div>
+
+                    <div class="controls">
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div class="register__label-wrapper">
+                                        <label for="form_name">Кода первичной регистрации</label>
+                                        <a href="#" class="register__label-link">Как получить код?</a>
+                                    </div>
+                                    
+                                    <input id="form_name" type="text" name="name" class="form-control"  required="required" data-error="Firstname is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div class="register__label-wrapper">
+                                        <label for="password">Пароль</label>
+                                        <a href="#" class="register__label-link">Сгенерировать</a>
+                                    </div>
+                                    <div class="register__password">
+                                        <input id="password" type="password" name="password" class="form-control password-input"  required="required" data-error="Lastname is required.">
+                                        <div class="help-block with-errors"></div>
+                                        <a href="#" class="password-control"></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_email">Email *</label>
+                                    <input id="form_email" type="email" name="email" class="form-control"  required="required" data-error="Valid email is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="confirm-password">Подтверждение пароля</label>
+
+                                    <div class="register__password">
+                                        <input id="confirm-password" type="password" name="confirm-password" class="form-control password-input-2">
+                                        <div class="help-block with-errors"></div>
+
+                                        <a href="#" class="password-control-2"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mb-30">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_phone">Номер телефона</label>
+                                    <div class="register__phone-wrapper">
+                                        <p class="register__phone">+7</p>
+                                        <input id="form_phone" type="tel" pattern="^[ 0-9]+$" name="phone" class="form-control">
+                                    </div>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 align-items-end">
+                                <div class="register__btn-top"></div>
+                                <button type="submit" class="btn btn-info">Регистрация</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </form>
+
+            </div><!-- /.col-lg-8 col-lg-offset-2 -->
+
+
+
+
+        </div> <!-- /.row-->
+        <div class="row">
+            <div class="col-md-12">
+                <p class="register__title">Нужна помощь?</p>
+                <p class="register__text">Если у Вас возникли какие-либо вопросы или Вам нужна наша помощь, то Вы можете
+                    <a href="#">связаться</a> с нами.</p>
+
+            </div>
+
+        </div>
+    </div> <!-- /.container-->
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--================Footer Area =================-->
+<footer class="footer_area section_gap_top">
+    <div class="container">
+        <div class="row footer_inner">
+            <div class="col-lg-3 col-sm-6">
+                <aside class="f_widget ab_widget">
+                    <div class="f_title">
+                        <h4>Информация</h4>
+                    </div>
+                    <ul>
+                        <li><a href="#"></a>Частным организациям</a></li><a href="#">
+                        <li><a href="#"></a>Условия сервиса</a></li>
+                        <li><a href="#"></a>Гарантия и постгарантия</a></li>
+                        <li><a href="#"></a>Виды деятельности</a></li>
+                        <li><a href="#"></a>Презентации</a></li>
+                    </ul>
+                </aside>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <aside class="f_widget ab_widget">
+                    <div class="f_title">
+                        <h4>Лаборатория</h4>
+                    </div>
+                    <ul>
+                        <li><a href="#"></a>Руководство</a></li><a href="#">
+                        <li><a href="#"></a>Сервисная служба
+                    </a></li>
+                        <li><a href="#"></a>Отдел продаж</a></li>
+                        <li><a href="#"></a>Департамент разработки</a></li>
+                        <li><a href="#"></a>Обновления продуктов</a></li>
+                    </ul>
+                </aside>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <aside class="f_widget ab_widget">
+                    <div class="f_title">
+                        <h4>Поддержка</h4>
+                    </div>
+                    <ul>
+                        <li><a href="#"></a>Документация</a></li><a href="#">
+                        <li><a href="#"></a>Безопасность
+                    </a></li>
+                        <li><a href="#"></a>Диагностика и экспертиза</a></li>
+                        <li><a href="#"></a>Алгоритмы взаимодействия</a></li>
+                        <li><a href="#"></a>Программное обеспечение</a></li>
+                    </ul>
+                </aside>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <aside class="f_widget ab_widget">
+                    <div class="f_title">
+                        <h4>Юридическая информация</h4>
+                    </div>
+                    <ul>
+                        <li><a href="#"></a>Оферта пользователя сайта</a></li><a href="#">
+                        <li><a href="#"></a>Политика безопасности
+                    </a></li>
+                        <li><a href="#"></a>Сбор информации</a></li>
+                        <li><a href="#"></a>Конфиденциальность</a></li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+        <div class="row single-footer-widget">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="copy_right_text">
+                    <p>Все права защищены &copy;&nbsp;<script>document.write(new Date().getFullYear());</script> | <a href="https://kazdream.kz" target="_blank">KazDream Technologies</a></p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="social_widget">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--================End Footer Area =================-->
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/stellar.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+<script src="vendors/isotope/isotope-min.js"></script>
+<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+<script src="js/jquery.ajaxchimp.min.js"></script>
+<script src="vendors/counter-up/jquery.waypoints.min.js"></script>
+<script src="vendors/counter-up/jquery.counterup.min.js"></script>
+<script src="js/mail-script.js"></script>
+<!--gmaps Js-->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+<script src="js/gmaps.min.js"></script>
+<script src="js/theme.js"></script>
+</body>
+
+</html>

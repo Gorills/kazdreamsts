@@ -1,8 +1,18 @@
 /* Footer Area css
 ============================================================================================ */
 
+.footer {
+
+    z-index: 9999;
+    background-image: url("../img/bg_green.png");
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+    background-color: #333;
+}
+
+
 .footer_area {
-    @include gradient2(to right, #231a60 0%, #3c338d 51%, #231a60 100%);
+    //@include gradient2(to right, #231a60 0%, #3c338d 51%, #231a60 100%);
+
     .f_widget {
         .f_title {
             margin-bottom: 40px;
@@ -22,6 +32,11 @@
                 padding-bottom: 20px;
                 color: rgba(255, 255, 255, .5);
                 cursor: pointer;
+                font-size: 18px;
+                a {
+                    color: #ffffff!important;
+                }
+
                 &:hover {
                     color: $primary-color;
                 }

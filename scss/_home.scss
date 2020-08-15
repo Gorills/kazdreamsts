@@ -5,10 +5,34 @@
     position: relative;
     width: 100%;
     height: 100%;
-    background-image: url("img/bg-1.png") !important;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+    z-index: 99;
+    background-image: url("../img/bg-5.png");
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+    background-color: #333;
+    padding: 120px 0;
+    .btn-info {
+        min-width: 135px;
+        //text-transform: uppercase;
+        //border-radius: 50px;
+        font-weight: 700;
+        border-radius: 0;
+        line-height: 40px;
+        padding: 15px 25px;
+
+
+
+
+    }
+    &__title {
+
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    .section_content {
+        padding: 0;
+    }
+
 }
 
 
@@ -79,6 +103,7 @@
 .recent_update_area {
     position: relative;
     height: 681px;
+    margin-bottom: 40px;
     //background: url(../img/recent_up_bg.png) no-repeat center;
     &.made_white {
         background: #fff;
@@ -90,6 +115,9 @@
         transform: translateX(50%);
         z-index: 2;
         width: 100%;
+        @media only screen and (max-width: 992px){
+            top: -50px;
+        }
     }
 }
 
@@ -103,6 +131,11 @@
         justify-content: space-between;
         p {
             line-height: 1.3;
+
+            @media only screen and (max-width: 992px){
+                display: none;
+            }
+
         }
 
 
@@ -110,19 +143,37 @@
         .nav-item__img {
 
             margin-bottom: 20px;
+            @media only screen and (max-width: 992px){
+                width: 50px;
+            }
 
         }
 
         li {
-            flex: 0 0 20%;
+            //flex: 0 0 20%;
             max-width: 20%;
+            width: 100%;
             padding: 0px 15px;
+            @media only screen and (max-width: 768px){
+                border-left: 1px solid #000;
+                border-right: 1px solid #000;
+            }
+            @media only screen and (max-width: 768px) {
+                padding: 0!important;
+                &:first-child {
+                    margin-left: 15px;
+                }
+                &:last-child {
+                    margin-right: 15px;
+                }
+
+            }
             //margin-bottom: 20px;
 
             a {
                 background-color: #e5e5e5;
                 position: relative;
-                height: 200px;
+                height: 200px!important;
                 border: 0px;
                 border-radius: 0;
                 text-align: center;
@@ -133,6 +184,12 @@
                 font-family: $title-font;
                 font-weight: 600;
                 color: #000000;
+                @media only screen and (max-width: 992px){
+                    height: 100px!important;
+                }
+
+
+
                 &::before {
                     //z-index: 2;
                     //content: '';
@@ -145,8 +202,11 @@
                     //@extend .gradient-bg;
                     //box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
                     //color: #000000;
-                    height: 220px;
+                    height: 220px!important;
                     margin-bottom: 0;
+                    @media only screen and (max-width: 992px){
+                        height: 120px!important;
+                    }
                 }
             }
         }
@@ -391,7 +451,7 @@
 ============================================================================================ */
 
 .frequently_area {
-    padding: 40px 0;
+    padding: 120px 0;
     position: relative;
     .main_title {
         margin-bottom: 40px;

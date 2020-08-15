@@ -1,0 +1,90 @@
+.register {
+  padding: 200px 0 120px;
+  //height: 80vh;
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+
+  h1 {
+    color: #22195e;
+
+  }
+
+  label {
+    font-size: 12px;
+  }
+
+  &__label-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__label-link {
+
+    font-size: 12px;
+
+  }
+
+  input {
+    background-color: $background-light;
+    border-radius: 0;
+  }
+
+  button {
+    width: 100%;
+    //text-transform: uppercase;
+    //border-radius: 50px;
+    font-weight: 700;
+    border-radius: 0;
+    line-height: 40px;
+    //padding: 5px;
+  }
+  &__btn {
+    align-items: flex-end;
+    height: 100%;
+  }
+
+  &__btn-top {
+    height: 24px;
+  }
+
+  &__password {
+    //width: 300px;
+    //margin: 15px auto;
+    position: relative;
+  }
+
+  .password-control,
+  .password-control-2
+  {
+    position: absolute;
+    top: 11px;
+    right: 6px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(https://snipp.ru/demo/495/view.svg) 0 0 no-repeat;
+  }
+  .password-control.view,
+  .password-control-2.view
+  {
+    background: url(https://snipp.ru/demo/495/no-view.svg) 0 0 no-repeat;
+  }
+
+  &__phone-wrapper{
+    display: flex;
+    align-items: center;
+  }
+
+  &__phone {
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #22195e;
+  }
+
+}

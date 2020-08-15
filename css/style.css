@@ -528,7 +528,8 @@ img {
   z-index: 1;
   background: url(../img/bg-1.png) no-repeat center center;
   background-size: cover;
-  position: relative; }
+  position: relative;
+  padding: 120px 0 40px; }
   .home_banner_area .banner_inner {
     width: 100%; }
     .home_banner_area .banner_inner .home_left_img {
@@ -2770,9 +2771,6 @@ h6 {
 
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
-.register {
-  color: black; }
-
 /*----------------------------------------------------*/
 /*----------------------------------------------------*/
 /* Start About Us Area css
@@ -2781,10 +2779,22 @@ h6 {
   position: relative;
   width: 100%;
   height: 100%;
-  background-image: url("img/bg-1.png") !important;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center; }
+  z-index: 99;
+  background-image: url("../img/bg-5.png");
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: #333;
+  padding: 120px 0; }
+  .about_us_area .btn-info {
+    min-width: 135px;
+    font-weight: 700;
+    border-radius: 0;
+    line-height: 40px;
+    padding: 15px 25px; }
+  .about_us_area__title {
+    font-weight: 700;
+    font-size: 20px; }
+  .about_us_area .section_content {
+    padding: 0; }
 
 .about_content {
   color: #000000 !important;
@@ -2837,7 +2847,8 @@ h6 {
 ============================================================================================ */
 .recent_update_area {
   position: relative;
-  height: 681px; }
+  height: 681px;
+  margin-bottom: 40px; }
   .recent_update_area.made_white {
     background: #fff; }
   .recent_update_area .recent_update_area_absolut {
@@ -2847,6 +2858,9 @@ h6 {
     transform: translateX(50%);
     z-index: 2;
     width: 100%; }
+    @media only screen and (max-width: 992px) {
+      .recent_update_area .recent_update_area_absolut {
+        top: -50px; } }
 
 .recent_update_inner .nav.nav-tabs {
   border: none;
@@ -2857,16 +2871,33 @@ h6 {
   justify-content: space-between; }
   .recent_update_inner .nav.nav-tabs p {
     line-height: 1.3; }
+    @media only screen and (max-width: 992px) {
+      .recent_update_inner .nav.nav-tabs p {
+        display: none; } }
   .recent_update_inner .nav.nav-tabs .nav-item__img {
     margin-bottom: 20px; }
+    @media only screen and (max-width: 992px) {
+      .recent_update_inner .nav.nav-tabs .nav-item__img {
+        width: 50px; } }
   .recent_update_inner .nav.nav-tabs li {
-    flex: 0 0 20%;
     max-width: 20%;
+    width: 100%;
     padding: 0px 15px; }
+    @media only screen and (max-width: 768px) {
+      .recent_update_inner .nav.nav-tabs li {
+        border-left: 1px solid #000;
+        border-right: 1px solid #000; } }
+    @media only screen and (max-width: 768px) {
+      .recent_update_inner .nav.nav-tabs li {
+        padding: 0 !important; }
+        .recent_update_inner .nav.nav-tabs li:first-child {
+          margin-left: 15px; }
+        .recent_update_inner .nav.nav-tabs li:last-child {
+          margin-right: 15px; } }
     .recent_update_inner .nav.nav-tabs li a {
       background-color: #e5e5e5;
       position: relative;
-      height: 200px;
+      height: 200px !important;
       border: 0px;
       border-radius: 0;
       text-align: center;
@@ -2876,9 +2907,15 @@ h6 {
       font-family: "Rajdhani", sans-serif;
       font-weight: 600;
       color: #000000; }
+      @media only screen and (max-width: 992px) {
+        .recent_update_inner .nav.nav-tabs li a {
+          height: 100px !important; } }
       .recent_update_inner .nav.nav-tabs li a.active {
-        height: 220px;
+        height: 220px !important;
         margin-bottom: 0; }
+        @media only screen and (max-width: 992px) {
+          .recent_update_inner .nav.nav-tabs li a.active {
+            height: 120px !important; } }
 
 .recent_update_inner .tab-content .tab-pane {
   border: none; }
@@ -3074,7 +3111,7 @@ h6 {
 /* Start Frequently Asked Questions Area css
 ============================================================================================ */
 .frequently_area {
-  padding: 40px 0;
+  padding: 120px 0;
   position: relative; }
   .frequently_area .main_title {
     margin-bottom: 40px; }
@@ -3873,30 +3910,34 @@ h6 {
 /*----------------------------------------------------*/
 /* Footer Area css
 ============================================================================================ */
-.footer_area {
-  background: -webkit-linear-gradient(to right, #231a60 0%, #3c338d 51%, #231a60 100%);
-  background: -moz-linear-gradient(to right, #231a60 0%, #3c338d 51%, #231a60 100%);
-  background: -ms-linear-gradient(to right, #231a60 0%, #3c338d 51%, #231a60 100%);
-  background: -o-linear-gradient(to right, #231a60 0%, #3c338d 51%, #231a60 100%);
-  background: linear-gradient(to right, #231a60 0%, #3c338d 51%, #231a60 100%); }
-  .footer_area .f_widget .f_title {
-    margin-bottom: 40px; }
-    .footer_area .f_widget .f_title h4 {
-      color: #fff;
-      font-size: 18px;
-      font-weight: 600;
-      margin-bottom: 0px; }
-  .footer_area .f_widget ul {
-    list-style: none;
-    padding-left: 0;
-    margin-bottom: 50px; }
-    .footer_area .f_widget ul li {
-      display: block;
-      padding-bottom: 20px;
-      color: rgba(255, 255, 255, 0.5);
-      cursor: pointer; }
-      .footer_area .f_widget ul li:hover {
-        color: #3fcaff; }
+.footer {
+  z-index: 9999;
+  background-image: url("../img/bg_green.png");
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: #333; }
+
+.footer_area .f_widget .f_title {
+  margin-bottom: 40px; }
+  .footer_area .f_widget .f_title h4 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 0px; }
+
+.footer_area .f_widget ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 50px; }
+  .footer_area .f_widget ul li {
+    display: block;
+    padding-bottom: 20px;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    font-size: 18px; }
+    .footer_area .f_widget ul li a {
+      color: #ffffff !important; }
+    .footer_area .f_widget ul li:hover {
+      color: #3fcaff; }
 
 .single-footer-widget {
   padding: 30px 0;
@@ -3926,3 +3967,54 @@ h6 {
 /* End Footer Area css
 ============================================================================================ */
 /*---------------------------------------------------- */
+.register {
+  padding: 200px 0 120px;
+  min-height: 700px;
+  display: flex;
+  align-items: center; }
+  .register h1 {
+    color: #22195e; }
+  .register label {
+    font-size: 12px; }
+  .register__label-wrapper {
+    display: flex;
+    justify-content: space-between; }
+  .register__label-link {
+    font-size: 12px; }
+  .register input {
+    background-color: #e5e5e5;
+    border-radius: 0; }
+  .register button {
+    width: 100%;
+    font-weight: 700;
+    border-radius: 0;
+    line-height: 40px; }
+  .register__btn {
+    align-items: flex-end;
+    height: 100%; }
+  .register__btn-top {
+    height: 24px; }
+  .register__password {
+    position: relative; }
+  .register .password-control,
+  .register .password-control-2 {
+    position: absolute;
+    top: 11px;
+    right: 6px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(https://snipp.ru/demo/495/view.svg) 0 0 no-repeat; }
+  .register .password-control.view,
+  .register .password-control-2.view {
+    background: url(https://snipp.ru/demo/495/no-view.svg) 0 0 no-repeat; }
+  .register__phone-wrapper {
+    display: flex;
+    align-items: center; }
+  .register__phone {
+    margin-bottom: 0;
+    margin-right: 10px; }
+  .register__title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #22195e; }
